@@ -26,13 +26,13 @@ Dataset used: **Telco Customer Churn Dataset**
 Expected file name:
 
 ```text
-WA_Fn-UseC_-Telco-Customer-Churn.csv
+Telco-Customer-Churn.csv
 ```
 
 Place the dataset file inside:
 
 ```text
-data/WA_Fn-UseC_-Telco-Customer-Churn.csv
+elco-Customer-Churn.csv
 ```
 
 The dataset contains customer-level information such as gender, senior citizen status, tenure, phone service, internet service, contract type, payment method, monthly charges, total charges, and churn status.
@@ -131,18 +131,11 @@ because it achieved the best F1-score.
 
 ```text
 telco-churn-ann-pytorch/
-├── data/
-├── notebooks/
-├── src/
-│   ├── model.py
-│   ├── preprocess.py
-│   ├── train.py
-│   └── predict.py
-├── models/
-├── results/
+├── notebook/
+│   ├── customer-churn-prediction
+├── dataset/
+│   ├── Telco-customer-churn
 ├── requirements.txt
-├── .gitignore
-├── LICENSE
 └── README.md
 ```
 
@@ -167,21 +160,7 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-## How to Run
 
-Place the dataset file inside the `data/` folder.
-
-Then run:
-
-```bash
-python src/train.py
-```
-
-To make a prediction using the saved model:
-
-```bash
-python src/predict.py
-```
 
 ## Important Learning Points
 
